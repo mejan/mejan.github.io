@@ -5,5 +5,5 @@ digraph "Graphical Class Hierarchy"
   rankdir="LR";
   Node1 [label="Overseer::Map",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOverseer_1_1Map.html",tooltip="is the overseer map that holds the most \"important\" functionality for a outside user. "];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="Overseer::MapImpl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOverseer_1_1MapImpl.html"];
+  Node2 [label="Overseer::MapImpl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOverseer_1_1MapImpl.html",tooltip="The interface towards the map. "];
 }
