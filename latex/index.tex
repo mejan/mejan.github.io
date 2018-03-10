@@ -1,0 +1,58 @@
+
+
+Library for analyzing Starcraft 2 maps by region decomposition. Based on the \href{http://bwem.sourceforge.net/}{\tt Brood War Easy Map architecture} created by Igor Dimitrijevic. It uses the M\+IT license.
+
+\subsection*{Getting started}
+
+Demo for Commandcenter https\+://github.com/pimmen89/\+Overseer/blob/master/demo/commandcenter.\+md \char`\"{}is found here.\char`\"{} Which is a very short demo just to get started.
+
+Include the file {\ttfamily \hyperlink{MapImpl_8h_source}{Map\+Impl.\+h}} into your project to get started.
+
+{\ttfamily \#include \char`\"{}\+Overseer/src/\+Map\+Impl.\+h\char`\"{}}
+
+You need to pass a pointer to your Agent to the map to have it fully configured. Then you need to call {\ttfamily Intialize()} to construct the map. Now you\textquotesingle{}re good to go! This is how it would look on Interloper LE
+
+
+\begin{DoxyCode}
+1 \{c++\}
+2 \{
+3     Overseer::MapImpl map;
+4 
+5     map.setBot(&bot); //Pass a pointer to your sc2::Agent
+6     map.Initialize(); //Intialize the map
+7 
+8     std::cout << "Number of tiles on map: " << map.size() << std::endl;
+9     std::cout << "Number of regions: " << map.getRegions().size() << std::endl;
+10 \}
+\end{DoxyCode}
+
+
+Example output\+:
+
+
+\begin{DoxyCode}
+1 Number of tiles on map: 26752
+2 Number of regions: 18
+\end{DoxyCode}
+
+
+If you want the number of {\ttfamily Choke\+Point} you have to check for each region pair since a pair of regions could have multiple {\ttfamily Choke\+Point}
+
+\subsection*{Project status}
+
+Overseer is currently under construction. Feel free to make a pull request!
+
+\subsection*{Documentation}
+
+The documentation is for local use only and can be \href{https://mejan.github.io}{\tt found here.} To open it on your local machine go into the doc/html/ and open index.\+html in your webbrowser.
+
+\subsection*{License}
+
+The license for this software (Overseer) can be found https\+://github.com/pimmen89/\+Overseer/blob/master/\+L\+I\+C\+E\+N\+S\+E.\+md \char`\"{}here.\char`\"{}
+
+\subsubsection*{Third party software license}
+
+
+\begin{DoxyItemize}
+\item \href{http://www.boost.org/LICENSE_1_0.txt}{\tt Boost Software License Version 1.\+0}\+: Used in Spatial c++ library 
+\end{DoxyItemize}
