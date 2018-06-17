@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['initialize',['Initialize',['../classOverseer_1_1MapImpl.html#a5ec5b37d1ae07732a99845bfbbfce016',1,'Overseer::MapImpl']]]
+  ['neutralimpl',['NeutralImpl',['../structOverseer_1_1NeutralImpl.html#a2ef6e7f65f2c6de6bc6beda0f020ba62',1,'Overseer::NeutralImpl']]]
 ];

@@ -1,8 +1,4 @@
 var searchData=
 [
-  ['map',['Map',['../classOverseer_1_1Map.html',1,'Overseer']]],
-  ['map',['Map',['../classOverseer_1_1Map.html#a4f7eabe216b39eb4a63a8d0b4f8abf60',1,'Overseer::Map']]],
-  ['mapimpl',['MapImpl',['../classOverseer_1_1MapImpl.html#a9c30887c6f342971fabd54d23b36a765',1,'Overseer::MapImpl']]],
-  ['mapimpl',['MapImpl',['../classOverseer_1_1MapImpl.html',1,'Overseer']]],
-  ['merge',['Merge',['../classOverseer_1_1Region.html#af1d0842a7f894786baa4a5af469b608d',1,'Overseer::Region']]]
+  ['neutralimpl',['NeutralImpl',['../structOverseer_1_1NeutralImpl.html',1,'Overseer::NeutralImpl'],['../structOverseer_1_1NeutralImpl.html#a2ef6e7f65f2c6de6bc6beda0f020ba62',1,'Overseer::NeutralImpl::NeutralImpl()']]]
 ];

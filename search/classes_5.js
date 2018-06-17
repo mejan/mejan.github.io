@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tile',['Tile',['../classOverseer_1_1Tile.html',1,'Overseer']]]
+  ['neutralimpl',['NeutralImpl',['../structOverseer_1_1NeutralImpl.html',1,'Overseer']]]
 ];

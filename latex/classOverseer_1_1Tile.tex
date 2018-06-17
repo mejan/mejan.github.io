@@ -12,50 +12,37 @@ A tile is area that has size 1x1 within S\+C\+II maps.
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-bool \hyperlink{classOverseer_1_1Tile_a51ec17d30cfc6d3d880799b97cbf5c8d}{Buildable} ()
-\begin{DoxyCompactList}\small\item\em check if a tile is buildable. \end{DoxyCompactList}\item 
-int \hyperlink{classOverseer_1_1Tile_a7a507e706adf690a78a0f48e7e347905}{Ground\+Height} ()
+Tile\+Terrain \hyperlink{classOverseer_1_1Tile_aeddd0f013514a193e8da23bdeafdd6b9}{get\+Tile\+Terrain} ()
+\begin{DoxyCompactList}\small\item\em Says what type of terrain it is on this tile, see Tile\+Terrain for alteritives. \end{DoxyCompactList}\item 
+float \hyperlink{classOverseer_1_1Tile_a22171679810a298d4119b997004d3e13}{get\+Terrain\+Height} ()
 \begin{DoxyCompactList}\small\item\em Get the z-\/axis value for the tile. \end{DoxyCompactList}\item 
-bool \hyperlink{classOverseer_1_1Tile_ad9468aec8d793d65e8c29ef7637f2e55}{Doodad} ()\hypertarget{classOverseer_1_1Tile_ad9468aec8d793d65e8c29ef7637f2e55}{}\label{classOverseer_1_1Tile_ad9468aec8d793d65e8c29ef7637f2e55}
-
-\begin{DoxyCompactList}\small\item\em corently not used... \end{DoxyCompactList}\item 
-void \hyperlink{classOverseer_1_1Tile_a74ff7d2c91fafc04723059c14d3ec723}{set\+Buildable} (bool buildable)
-\begin{DoxyCompactList}\small\item\em Set a tile to buildable. \end{DoxyCompactList}\item 
+void \hyperlink{classOverseer_1_1Tile_a79f2aa12d9463e7e4bfc85b8bdddbc34}{set\+Terrain\+Height} (float height)
+\begin{DoxyCompactList}\small\item\em Sets the z-\/axis value for the tile. \end{DoxyCompactList}\item 
+void \hyperlink{classOverseer_1_1Tile_a22494032e2b92af9c4e4b375845fd80f}{set\+Tile\+Terrain} (Tile\+Terrain \&terrain)
+\begin{DoxyCompactList}\small\item\em If there exist build or wall. \end{DoxyCompactList}\item 
 void \hyperlink{classOverseer_1_1Tile_a5a3b3f84b703b2cd5a9ae56b60e77b4c}{set\+Dist\+Nearest\+Unpathable} (float dist)
 \begin{DoxyCompactList}\small\item\em Set a distance to the nearest unpathable tile. \end{DoxyCompactList}\item 
-float \hyperlink{classOverseer_1_1Tile_ae2ade272164fce21f27530248add1d18}{get\+Dist\+Nearest\+Unpathable} () const 
+float \hyperlink{classOverseer_1_1Tile_a120fd6da5041e8c60bb8d92caa111576}{get\+Dist\+Nearest\+Unpathable} () const
 \begin{DoxyCompactList}\small\item\em Get the distance to nearest unpathable. \end{DoxyCompactList}\item 
 void \hyperlink{classOverseer_1_1Tile_a8f0f9bc7bd55533a4df7cf2cafc08eaa}{set\+Region\+Id} (size\+\_\+t region\+Id)
 \begin{DoxyCompactList}\small\item\em Set the region id this tile belong to. \end{DoxyCompactList}\item 
 size\+\_\+t \hyperlink{classOverseer_1_1Tile_aa1fa9037029a36f50b3c13130813e825}{get\+Region\+Id} ()
-\begin{DoxyCompactList}\small\item\em Get the region id this tile is in. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get the region id this tile is in. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classOverseer_1_1Tile_ae2e7f85589e4963a0474b038cff3daa0}\label{classOverseer_1_1Tile_ae2e7f85589e4963a0474b038cff3daa0}} 
+bool \hyperlink{classOverseer_1_1Tile_ae2e7f85589e4963a0474b038cff3daa0}{is\+Neutral} ()
+\begin{DoxyCompactList}\small\item\em Check if the tile contain neutral unit, e.\+g. gas, miniral and destroable. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 A tile is area that has size 1x1 within S\+C\+II maps. 
 
 \subsection{Member Function Documentation}
-\index{Overseer\+::\+Tile@{Overseer\+::\+Tile}!Buildable@{Buildable}}
-\index{Buildable@{Buildable}!Overseer\+::\+Tile@{Overseer\+::\+Tile}}
-\subsubsection[{\texorpdfstring{Buildable()}{Buildable()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Overseer\+::\+Tile\+::\+Buildable (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classOverseer_1_1Tile_a51ec17d30cfc6d3d880799b97cbf5c8d}{}\label{classOverseer_1_1Tile_a51ec17d30cfc6d3d880799b97cbf5c8d}
-
-
-check if a tile is buildable. 
-
-\begin{DoxyReturn}{Returns}
-true is tile is buildable, false otherwise 
-\end{DoxyReturn}
+\mbox{\Hypertarget{classOverseer_1_1Tile_a120fd6da5041e8c60bb8d92caa111576}\label{classOverseer_1_1Tile_a120fd6da5041e8c60bb8d92caa111576}} 
 \index{Overseer\+::\+Tile@{Overseer\+::\+Tile}!get\+Dist\+Nearest\+Unpathable@{get\+Dist\+Nearest\+Unpathable}}
 \index{get\+Dist\+Nearest\+Unpathable@{get\+Dist\+Nearest\+Unpathable}!Overseer\+::\+Tile@{Overseer\+::\+Tile}}
-\subsubsection[{\texorpdfstring{get\+Dist\+Nearest\+Unpathable() const }{getDistNearestUnpathable() const }}]{\setlength{\rightskip}{0pt plus 5cm}float Overseer\+::\+Tile\+::get\+Dist\+Nearest\+Unpathable (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const}\hypertarget{classOverseer_1_1Tile_ae2ade272164fce21f27530248add1d18}{}\label{classOverseer_1_1Tile_ae2ade272164fce21f27530248add1d18}
+\subsubsection{\texorpdfstring{get\+Dist\+Nearest\+Unpathable()}{getDistNearestUnpathable()}}
+{\footnotesize\ttfamily float Overseer\+::\+Tile\+::get\+Dist\+Nearest\+Unpathable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
 
 
 Get the distance to nearest unpathable. 
@@ -63,13 +50,12 @@ Get the distance to nearest unpathable.
 \begin{DoxyReturn}{Returns}
 distance. 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classOverseer_1_1Tile_aa1fa9037029a36f50b3c13130813e825}\label{classOverseer_1_1Tile_aa1fa9037029a36f50b3c13130813e825}} 
 \index{Overseer\+::\+Tile@{Overseer\+::\+Tile}!get\+Region\+Id@{get\+Region\+Id}}
 \index{get\+Region\+Id@{get\+Region\+Id}!Overseer\+::\+Tile@{Overseer\+::\+Tile}}
-\subsubsection[{\texorpdfstring{get\+Region\+Id()}{getRegionId()}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Overseer\+::\+Tile\+::get\+Region\+Id (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classOverseer_1_1Tile_aa1fa9037029a36f50b3c13130813e825}{}\label{classOverseer_1_1Tile_aa1fa9037029a36f50b3c13130813e825}
+\subsubsection{\texorpdfstring{get\+Region\+Id()}{getRegionId()}}
+{\footnotesize\ttfamily size\+\_\+t Overseer\+::\+Tile\+::get\+Region\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 
 
 Get the region id this tile is in. 
@@ -77,13 +63,12 @@ Get the region id this tile is in.
 \begin{DoxyReturn}{Returns}
 regionid 
 \end{DoxyReturn}
-\index{Overseer\+::\+Tile@{Overseer\+::\+Tile}!Ground\+Height@{Ground\+Height}}
-\index{Ground\+Height@{Ground\+Height}!Overseer\+::\+Tile@{Overseer\+::\+Tile}}
-\subsubsection[{\texorpdfstring{Ground\+Height()}{GroundHeight()}}]{\setlength{\rightskip}{0pt plus 5cm}int Overseer\+::\+Tile\+::\+Ground\+Height (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classOverseer_1_1Tile_a7a507e706adf690a78a0f48e7e347905}{}\label{classOverseer_1_1Tile_a7a507e706adf690a78a0f48e7e347905}
+\mbox{\Hypertarget{classOverseer_1_1Tile_a22171679810a298d4119b997004d3e13}\label{classOverseer_1_1Tile_a22171679810a298d4119b997004d3e13}} 
+\index{Overseer\+::\+Tile@{Overseer\+::\+Tile}!get\+Terrain\+Height@{get\+Terrain\+Height}}
+\index{get\+Terrain\+Height@{get\+Terrain\+Height}!Overseer\+::\+Tile@{Overseer\+::\+Tile}}
+\subsubsection{\texorpdfstring{get\+Terrain\+Height()}{getTerrainHeight()}}
+{\footnotesize\ttfamily float Overseer\+::\+Tile\+::get\+Terrain\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 
 
 Get the z-\/axis value for the tile. 
@@ -91,29 +76,25 @@ Get the z-\/axis value for the tile.
 \begin{DoxyReturn}{Returns}
 z-\/axis value. 
 \end{DoxyReturn}
-\index{Overseer\+::\+Tile@{Overseer\+::\+Tile}!set\+Buildable@{set\+Buildable}}
-\index{set\+Buildable@{set\+Buildable}!Overseer\+::\+Tile@{Overseer\+::\+Tile}}
-\subsubsection[{\texorpdfstring{set\+Buildable(bool buildable)}{setBuildable(bool buildable)}}]{\setlength{\rightskip}{0pt plus 5cm}void Overseer\+::\+Tile\+::set\+Buildable (
-\begin{DoxyParamCaption}
-\item[{bool}]{buildable}
-\end{DoxyParamCaption}
-)}\hypertarget{classOverseer_1_1Tile_a74ff7d2c91fafc04723059c14d3ec723}{}\label{classOverseer_1_1Tile_a74ff7d2c91fafc04723059c14d3ec723}
+\mbox{\Hypertarget{classOverseer_1_1Tile_aeddd0f013514a193e8da23bdeafdd6b9}\label{classOverseer_1_1Tile_aeddd0f013514a193e8da23bdeafdd6b9}} 
+\index{Overseer\+::\+Tile@{Overseer\+::\+Tile}!get\+Tile\+Terrain@{get\+Tile\+Terrain}}
+\index{get\+Tile\+Terrain@{get\+Tile\+Terrain}!Overseer\+::\+Tile@{Overseer\+::\+Tile}}
+\subsubsection{\texorpdfstring{get\+Tile\+Terrain()}{getTileTerrain()}}
+{\footnotesize\ttfamily Tile\+Terrain Overseer\+::\+Tile\+::get\+Tile\+Terrain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
-Set a tile to buildable. 
 
+Says what type of terrain it is on this tile, see Tile\+Terrain for alteritives. 
 
-\begin{DoxyParams}{Parameters}
-{\em buildable} & boolean value, true if buildable and false otherwise. \\
-\hline
-\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the terrain determed for T\+H\+IS tile. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOverseer_1_1Tile_a5a3b3f84b703b2cd5a9ae56b60e77b4c}\label{classOverseer_1_1Tile_a5a3b3f84b703b2cd5a9ae56b60e77b4c}} 
 \index{Overseer\+::\+Tile@{Overseer\+::\+Tile}!set\+Dist\+Nearest\+Unpathable@{set\+Dist\+Nearest\+Unpathable}}
 \index{set\+Dist\+Nearest\+Unpathable@{set\+Dist\+Nearest\+Unpathable}!Overseer\+::\+Tile@{Overseer\+::\+Tile}}
-\subsubsection[{\texorpdfstring{set\+Dist\+Nearest\+Unpathable(float dist)}{setDistNearestUnpathable(float dist)}}]{\setlength{\rightskip}{0pt plus 5cm}void Overseer\+::\+Tile\+::set\+Dist\+Nearest\+Unpathable (
-\begin{DoxyParamCaption}
-\item[{float}]{dist}
-\end{DoxyParamCaption}
-)}\hypertarget{classOverseer_1_1Tile_a5a3b3f84b703b2cd5a9ae56b60e77b4c}{}\label{classOverseer_1_1Tile_a5a3b3f84b703b2cd5a9ae56b60e77b4c}
+\subsubsection{\texorpdfstring{set\+Dist\+Nearest\+Unpathable()}{setDistNearestUnpathable()}}
+{\footnotesize\ttfamily void Overseer\+::\+Tile\+::set\+Dist\+Nearest\+Unpathable (\begin{DoxyParamCaption}\item[{float}]{dist }\end{DoxyParamCaption})}
+
 
 
 Set a distance to the nearest unpathable tile. 
@@ -123,13 +104,12 @@ Set a distance to the nearest unpathable tile.
 {\em dist} & The distance til unpathable. \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classOverseer_1_1Tile_a8f0f9bc7bd55533a4df7cf2cafc08eaa}\label{classOverseer_1_1Tile_a8f0f9bc7bd55533a4df7cf2cafc08eaa}} 
 \index{Overseer\+::\+Tile@{Overseer\+::\+Tile}!set\+Region\+Id@{set\+Region\+Id}}
 \index{set\+Region\+Id@{set\+Region\+Id}!Overseer\+::\+Tile@{Overseer\+::\+Tile}}
-\subsubsection[{\texorpdfstring{set\+Region\+Id(size\+\_\+t region\+Id)}{setRegionId(size_t regionId)}}]{\setlength{\rightskip}{0pt plus 5cm}void Overseer\+::\+Tile\+::set\+Region\+Id (
-\begin{DoxyParamCaption}
-\item[{size\+\_\+t}]{region\+Id}
-\end{DoxyParamCaption}
-)}\hypertarget{classOverseer_1_1Tile_a8f0f9bc7bd55533a4df7cf2cafc08eaa}{}\label{classOverseer_1_1Tile_a8f0f9bc7bd55533a4df7cf2cafc08eaa}
+\subsubsection{\texorpdfstring{set\+Region\+Id()}{setRegionId()}}
+{\footnotesize\ttfamily void Overseer\+::\+Tile\+::set\+Region\+Id (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{region\+Id }\end{DoxyParamCaption})}
+
 
 
 Set the region id this tile belong to. 
@@ -137,6 +117,39 @@ Set the region id this tile belong to.
 
 \begin{DoxyParams}{Parameters}
 {\em region\+Id} & the id to set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classOverseer_1_1Tile_a79f2aa12d9463e7e4bfc85b8bdddbc34}\label{classOverseer_1_1Tile_a79f2aa12d9463e7e4bfc85b8bdddbc34}} 
+\index{Overseer\+::\+Tile@{Overseer\+::\+Tile}!set\+Terrain\+Height@{set\+Terrain\+Height}}
+\index{set\+Terrain\+Height@{set\+Terrain\+Height}!Overseer\+::\+Tile@{Overseer\+::\+Tile}}
+\subsubsection{\texorpdfstring{set\+Terrain\+Height()}{setTerrainHeight()}}
+{\footnotesize\ttfamily void Overseer\+::\+Tile\+::set\+Terrain\+Height (\begin{DoxyParamCaption}\item[{float}]{height }\end{DoxyParamCaption})}
+
+
+
+Sets the z-\/axis value for the tile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z-\/axis} & value of tile \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classOverseer_1_1Tile_a22494032e2b92af9c4e4b375845fd80f}\label{classOverseer_1_1Tile_a22494032e2b92af9c4e4b375845fd80f}} 
+\index{Overseer\+::\+Tile@{Overseer\+::\+Tile}!set\+Tile\+Terrain@{set\+Tile\+Terrain}}
+\index{set\+Tile\+Terrain@{set\+Tile\+Terrain}!Overseer\+::\+Tile@{Overseer\+::\+Tile}}
+\subsubsection{\texorpdfstring{set\+Tile\+Terrain()}{setTileTerrain()}}
+{\footnotesize\ttfamily void Overseer\+::\+Tile\+::set\+Tile\+Terrain (\begin{DoxyParamCaption}\item[{Tile\+Terrain \&}]{terrain }\end{DoxyParamCaption})}
+
+
+
+If there exist build or wall. 
+
+/// Currentlyt no use \textbackslash{}\textbackslash{} \begin{DoxyReturn}{Returns}
+true if wall or build exist, false otherwise. Sets a terrain for T\+H\+IS tile.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em terrain} & that will be set for the tile \\
 \hline
 \end{DoxyParams}
 

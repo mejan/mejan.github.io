@@ -1,0 +1,122 @@
+\hypertarget{structOverseer_1_1NeutralImpl}{}\section{Overseer\+:\+:Neutral\+Impl Struct Reference}
+\label{structOverseer_1_1NeutralImpl}\index{Overseer\+::\+Neutral\+Impl@{Overseer\+::\+Neutral\+Impl}}
+
+
+Used to find neutral objects on the map.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structOverseer_1_1NeutralImpl_a2ef6e7f65f2c6de6bc6beda0f020ba62}{Neutral\+Impl} (const sc2\+::\+Observation\+Interface $\ast$obs)
+\begin{DoxyCompactList}\small\item\em Constructor sets all neutral positions to a map. \end{DoxyCompactList}\item 
+bool \hyperlink{structOverseer_1_1NeutralImpl_a6bb0b123b5db8ab4285715d71a4d7e5b}{is\+Mineral} (sc2\+::\+Point2D \&pos)
+\begin{DoxyCompactList}\small\item\em Check if a point is a mineral or not. \end{DoxyCompactList}\item 
+bool \hyperlink{structOverseer_1_1NeutralImpl_a803959fe80b2b6bb14444a639b89acd5}{is\+Gas} (sc2\+::\+Point2D \&pos)
+\begin{DoxyCompactList}\small\item\em Check if a point is a geyser or not. \end{DoxyCompactList}\item 
+bool \hyperlink{structOverseer_1_1NeutralImpl_af8393ea00dad811b9132403e73d68f83}{is\+Destructible} (sc2\+::\+Point2D \&pos)
+\begin{DoxyCompactList}\small\item\em Check if a point is a destructable object or not. \end{DoxyCompactList}\item 
+bool \hyperlink{structOverseer_1_1NeutralImpl_a8e874807b118a287811311a033c98dc2}{is\+Naga\+Tower} (sc2\+::\+Point2D \&pos)
+\begin{DoxyCompactList}\small\item\em Check if a point is a Xelnaga tower or not. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Used to find neutral objects on the map. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structOverseer_1_1NeutralImpl_a2ef6e7f65f2c6de6bc6beda0f020ba62}\label{structOverseer_1_1NeutralImpl_a2ef6e7f65f2c6de6bc6beda0f020ba62}} 
+\index{Overseer\+::\+Neutral\+Impl@{Overseer\+::\+Neutral\+Impl}!Neutral\+Impl@{Neutral\+Impl}}
+\index{Neutral\+Impl@{Neutral\+Impl}!Overseer\+::\+Neutral\+Impl@{Overseer\+::\+Neutral\+Impl}}
+\subsubsection{\texorpdfstring{Neutral\+Impl()}{NeutralImpl()}}
+{\footnotesize\ttfamily Overseer\+::\+Neutral\+Impl\+::\+Neutral\+Impl (\begin{DoxyParamCaption}\item[{const sc2\+::\+Observation\+Interface $\ast$}]{obs }\end{DoxyParamCaption})}
+
+
+
+Constructor sets all neutral positions to a map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obs} & used to discover neutrals on the map. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structOverseer_1_1NeutralImpl_af8393ea00dad811b9132403e73d68f83}\label{structOverseer_1_1NeutralImpl_af8393ea00dad811b9132403e73d68f83}} 
+\index{Overseer\+::\+Neutral\+Impl@{Overseer\+::\+Neutral\+Impl}!is\+Destructible@{is\+Destructible}}
+\index{is\+Destructible@{is\+Destructible}!Overseer\+::\+Neutral\+Impl@{Overseer\+::\+Neutral\+Impl}}
+\subsubsection{\texorpdfstring{is\+Destructible()}{isDestructible()}}
+{\footnotesize\ttfamily bool Overseer\+::\+Neutral\+Impl\+::is\+Destructible (\begin{DoxyParamCaption}\item[{sc2\+::\+Point2D \&}]{pos }\end{DoxyParamCaption})}
+
+
+
+Check if a point is a destructable object or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & the point to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it is destructable object, otherwise false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structOverseer_1_1NeutralImpl_a803959fe80b2b6bb14444a639b89acd5}\label{structOverseer_1_1NeutralImpl_a803959fe80b2b6bb14444a639b89acd5}} 
+\index{Overseer\+::\+Neutral\+Impl@{Overseer\+::\+Neutral\+Impl}!is\+Gas@{is\+Gas}}
+\index{is\+Gas@{is\+Gas}!Overseer\+::\+Neutral\+Impl@{Overseer\+::\+Neutral\+Impl}}
+\subsubsection{\texorpdfstring{is\+Gas()}{isGas()}}
+{\footnotesize\ttfamily bool Overseer\+::\+Neutral\+Impl\+::is\+Gas (\begin{DoxyParamCaption}\item[{sc2\+::\+Point2D \&}]{pos }\end{DoxyParamCaption})}
+
+
+
+Check if a point is a geyser or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & the point to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it is geyser, otherwise false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structOverseer_1_1NeutralImpl_a6bb0b123b5db8ab4285715d71a4d7e5b}\label{structOverseer_1_1NeutralImpl_a6bb0b123b5db8ab4285715d71a4d7e5b}} 
+\index{Overseer\+::\+Neutral\+Impl@{Overseer\+::\+Neutral\+Impl}!is\+Mineral@{is\+Mineral}}
+\index{is\+Mineral@{is\+Mineral}!Overseer\+::\+Neutral\+Impl@{Overseer\+::\+Neutral\+Impl}}
+\subsubsection{\texorpdfstring{is\+Mineral()}{isMineral()}}
+{\footnotesize\ttfamily bool Overseer\+::\+Neutral\+Impl\+::is\+Mineral (\begin{DoxyParamCaption}\item[{sc2\+::\+Point2D \&}]{pos }\end{DoxyParamCaption})}
+
+
+
+Check if a point is a mineral or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & the point to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if point is mineral, otherwise false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structOverseer_1_1NeutralImpl_a8e874807b118a287811311a033c98dc2}\label{structOverseer_1_1NeutralImpl_a8e874807b118a287811311a033c98dc2}} 
+\index{Overseer\+::\+Neutral\+Impl@{Overseer\+::\+Neutral\+Impl}!is\+Naga\+Tower@{is\+Naga\+Tower}}
+\index{is\+Naga\+Tower@{is\+Naga\+Tower}!Overseer\+::\+Neutral\+Impl@{Overseer\+::\+Neutral\+Impl}}
+\subsubsection{\texorpdfstring{is\+Naga\+Tower()}{isNagaTower()}}
+{\footnotesize\ttfamily bool Overseer\+::\+Neutral\+Impl\+::is\+Naga\+Tower (\begin{DoxyParamCaption}\item[{sc2\+::\+Point2D \&}]{pos }\end{DoxyParamCaption})}
+
+
+
+Check if a point is a Xelnaga tower or not. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & the point to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it is Xelnaga tower, otherwise false. 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/Neutral\+Set\+Obj.\+h\item 
+src/Neutral\+Set\+Obj.\+cpp\end{DoxyCompactItemize}

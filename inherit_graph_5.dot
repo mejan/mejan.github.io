@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="Overseer::point2d_accessor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structOverseer_1_1point2d__accessor.html",tooltip="Fix indexing in spatial. "];
+  Node0 [label="Overseer::Graph",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOverseer_1_1Graph.html",tooltip="Is a mathematical \"graphmap\" for analysing. "];
 }

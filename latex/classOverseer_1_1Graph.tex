@@ -2,43 +2,49 @@
 \label{classOverseer_1_1Graph}\index{Overseer\+::\+Graph@{Overseer\+::\+Graph}}
 
 
-Is a mathiimatical \char`\"{}graphmap\char`\"{} of for analising.  
+Is a mathematical \char`\"{}graphmap\char`\"{} for analysing.  
 
 
 
 
-{\ttfamily \#include \char`\"{}Graph.\+h\char`\"{}}
+{\ttfamily \#include \char`\"{}src/\+Graph.\+h\char`\"{}}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classOverseer_1_1Graph_a8d8f7394a8403b305682d19e72fe2678}{Graph} ()\hypertarget{classOverseer_1_1Graph_a8d8f7394a8403b305682d19e72fe2678}{}\label{classOverseer_1_1Graph_a8d8f7394a8403b305682d19e72fe2678}
-
+\mbox{\Hypertarget{classOverseer_1_1Graph_a8d8f7394a8403b305682d19e72fe2678}\label{classOverseer_1_1Graph_a8d8f7394a8403b305682d19e72fe2678}} 
+\hyperlink{classOverseer_1_1Graph_a8d8f7394a8403b305682d19e72fe2678}{Graph} ()
 \begin{DoxyCompactList}\small\item\em empty constructor \end{DoxyCompactList}\item 
 \hyperlink{classOverseer_1_1Graph_af9efde8054cddf829f36a66ff8df5e8b}{Graph} (\hyperlink{classOverseer_1_1Map}{Map} $\ast$map)
 \begin{DoxyCompactList}\small\item\em object constructor. \end{DoxyCompactList}\item 
-std\+::vector$<$ \hyperlink{classOverseer_1_1ChokePoint}{Choke\+Point} $>$ \hyperlink{classOverseer_1_1Graph_a066ffec487ded799cd8894cd870cabc8}{get\+Choke\+Points} (size\+\_\+t region\+\_\+id\+\_\+a, size\+\_\+t region\+\_\+id\+\_\+b) const 
+std\+::vector$<$ \hyperlink{classOverseer_1_1ChokePoint}{Choke\+Point} $>$ \hyperlink{classOverseer_1_1Graph_a0d41b814406a8ed2612b7d606670c5cd}{get\+Choke\+Points} (size\+\_\+t region\+\_\+id\+\_\+a, size\+\_\+t region\+\_\+id\+\_\+b) const
 \begin{DoxyCompactList}\small\item\em Gets the chokepoints been descovered between two adjacent regions. \end{DoxyCompactList}\item 
-void \hyperlink{classOverseer_1_1Graph_abc6459d9a554bdbfbe7fdfb87b3177cd}{Create\+Choke\+Points} ()\hypertarget{classOverseer_1_1Graph_abc6459d9a554bdbfbe7fdfb87b3177cd}{}\label{classOverseer_1_1Graph_abc6459d9a554bdbfbe7fdfb87b3177cd}
-
+std\+::vector$<$ \hyperlink{classOverseer_1_1ChokePoint}{Choke\+Point} $>$ \hyperlink{classOverseer_1_1Graph_a5c40f106b55d259b1168a501f9c35ab3}{get\+Choke\+Points} () const
+\begin{DoxyCompactList}\small\item\em Gets all the chokepoints on the map. \end{DoxyCompactList}\item 
+\hyperlink{classOverseer_1_1ChokePoint}{Choke\+Point} \hyperlink{classOverseer_1_1Graph_a5d31f9158cc08a492c88976aabe83622}{get\+Choke\+Point} (Choke\+Point\+Id cp\+\_\+id) const
+\begin{DoxyCompactList}\small\item\em Get the spacific chokepoint from a chokepoint id. \end{DoxyCompactList}\item 
+C\+P\+Path \& \hyperlink{classOverseer_1_1Graph_a3e1625adca63c0446193612b1a0e41e7}{get\+Path} (\hyperlink{classOverseer_1_1ChokePoint}{Choke\+Point} cp\+\_\+a, \hyperlink{classOverseer_1_1ChokePoint}{Choke\+Point} cp\+\_\+b)
+\begin{DoxyCompactList}\small\item\em Gets a sorted list of chokepoint between chokepoint cp\+\_\+a and cp\+\_\+b. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classOverseer_1_1Graph_ad5adfa0b535ffc46ad85d26119e6d89b}\label{classOverseer_1_1Graph_ad5adfa0b535ffc46ad85d26119e6d89b}} 
+void \hyperlink{classOverseer_1_1Graph_ad5adfa0b535ffc46ad85d26119e6d89b}{create\+Choke\+Points} ()
 \begin{DoxyCompactList}\small\item\em find and create the chokepoint on the map. \end{DoxyCompactList}\item 
-void \hyperlink{classOverseer_1_1Graph_a9b44f014d61872c88c729f17b11fe926}{Compute\+Adjacency\+Matrix} (std\+::vector$<$ \hyperlink{classOverseer_1_1ChokePoint}{Choke\+Point} $>$ choke\+Points)
-\begin{DoxyCompactList}\small\item\em Build triagular matrix to store region adjacency. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classOverseer_1_1Graph_a5149ac86dd295cda3f966b22b75a5932}\label{classOverseer_1_1Graph_a5149ac86dd295cda3f966b22b75a5932}} 
+void \hyperlink{classOverseer_1_1Graph_a5149ac86dd295cda3f966b22b75a5932}{compute\+Paths} ()
+\begin{DoxyCompactList}\small\item\em Calculate all paths between all chokepoints. \end{DoxyCompactList}\item 
 void \hyperlink{classOverseer_1_1Graph_ad515783d1196207bc2c34637f421b593}{set\+Map} (\hyperlink{classOverseer_1_1Map}{Map} $\ast$map)
 \begin{DoxyCompactList}\small\item\em set the sc2 map to this class. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Is a mathiimatical \char`\"{}graphmap\char`\"{} of for analising. 
+Is a mathematical \char`\"{}graphmap\char`\"{} for analysing. 
 
 \subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classOverseer_1_1Graph_af9efde8054cddf829f36a66ff8df5e8b}\label{classOverseer_1_1Graph_af9efde8054cddf829f36a66ff8df5e8b}} 
 \index{Overseer\+::\+Graph@{Overseer\+::\+Graph}!Graph@{Graph}}
 \index{Graph@{Graph}!Overseer\+::\+Graph@{Overseer\+::\+Graph}}
-\subsubsection[{\texorpdfstring{Graph(\+Map $\ast$map)}{Graph(Map *map)}}]{\setlength{\rightskip}{0pt plus 5cm}Overseer\+::\+Graph\+::\+Graph (
-\begin{DoxyParamCaption}
-\item[{{\bf Map} $\ast$}]{map}
-\end{DoxyParamCaption}
-)}\hypertarget{classOverseer_1_1Graph_af9efde8054cddf829f36a66ff8df5e8b}{}\label{classOverseer_1_1Graph_af9efde8054cddf829f36a66ff8df5e8b}
+\subsubsection{\texorpdfstring{Graph()}{Graph()}}
+{\footnotesize\ttfamily Overseer\+::\+Graph\+::\+Graph (\begin{DoxyParamCaption}\item[{\hyperlink{classOverseer_1_1Map}{Map} $\ast$}]{map }\end{DoxyParamCaption})}
+
 
 
 object constructor. 
@@ -51,30 +57,30 @@ object constructor.
 
 
 \subsection{Member Function Documentation}
-\index{Overseer\+::\+Graph@{Overseer\+::\+Graph}!Compute\+Adjacency\+Matrix@{Compute\+Adjacency\+Matrix}}
-\index{Compute\+Adjacency\+Matrix@{Compute\+Adjacency\+Matrix}!Overseer\+::\+Graph@{Overseer\+::\+Graph}}
-\subsubsection[{\texorpdfstring{Compute\+Adjacency\+Matrix(std\+::vector$<$ Choke\+Point $>$ choke\+Points)}{ComputeAdjacencyMatrix(std::vector< ChokePoint > chokePoints)}}]{\setlength{\rightskip}{0pt plus 5cm}void Overseer\+::\+Graph\+::\+Compute\+Adjacency\+Matrix (
-\begin{DoxyParamCaption}
-\item[{std\+::vector$<$ {\bf Choke\+Point} $>$}]{choke\+Points}
-\end{DoxyParamCaption}
-)}\hypertarget{classOverseer_1_1Graph_a9b44f014d61872c88c729f17b11fe926}{}\label{classOverseer_1_1Graph_a9b44f014d61872c88c729f17b11fe926}
+\mbox{\Hypertarget{classOverseer_1_1Graph_a5d31f9158cc08a492c88976aabe83622}\label{classOverseer_1_1Graph_a5d31f9158cc08a492c88976aabe83622}} 
+\index{Overseer\+::\+Graph@{Overseer\+::\+Graph}!get\+Choke\+Point@{get\+Choke\+Point}}
+\index{get\+Choke\+Point@{get\+Choke\+Point}!Overseer\+::\+Graph@{Overseer\+::\+Graph}}
+\subsubsection{\texorpdfstring{get\+Choke\+Point()}{getChokePoint()}}
+{\footnotesize\ttfamily \hyperlink{classOverseer_1_1ChokePoint}{Choke\+Point} Overseer\+::\+Graph\+::get\+Choke\+Point (\begin{DoxyParamCaption}\item[{Choke\+Point\+Id}]{cp\+\_\+id }\end{DoxyParamCaption}) const}
 
 
-Build triagular matrix to store region adjacency. 
+
+Get the spacific chokepoint from a chokepoint id. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em choke\+Points} & A vector that contains the found chokepoints. \\
+{\em cp\+\_\+id} & The id to the wanted chokepoint. \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The chokepoint mapped to the cp\+\_\+id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOverseer_1_1Graph_a0d41b814406a8ed2612b7d606670c5cd}\label{classOverseer_1_1Graph_a0d41b814406a8ed2612b7d606670c5cd}} 
 \index{Overseer\+::\+Graph@{Overseer\+::\+Graph}!get\+Choke\+Points@{get\+Choke\+Points}}
 \index{get\+Choke\+Points@{get\+Choke\+Points}!Overseer\+::\+Graph@{Overseer\+::\+Graph}}
-\subsubsection[{\texorpdfstring{get\+Choke\+Points(size\+\_\+t region\+\_\+id\+\_\+a, size\+\_\+t region\+\_\+id\+\_\+b) const }{getChokePoints(size_t region_id_a, size_t region_id_b) const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Choke\+Point} $>$ Overseer\+::\+Graph\+::get\+Choke\+Points (
-\begin{DoxyParamCaption}
-\item[{size\+\_\+t}]{region\+\_\+id\+\_\+a, }
-\item[{size\+\_\+t}]{region\+\_\+id\+\_\+b}
-\end{DoxyParamCaption}
-) const}\hypertarget{classOverseer_1_1Graph_a066ffec487ded799cd8894cd870cabc8}{}\label{classOverseer_1_1Graph_a066ffec487ded799cd8894cd870cabc8}
+\subsubsection{\texorpdfstring{get\+Choke\+Points()}{getChokePoints()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{classOverseer_1_1ChokePoint}{Choke\+Point} $>$ Overseer\+::\+Graph\+::get\+Choke\+Points (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{region\+\_\+id\+\_\+a,  }\item[{size\+\_\+t}]{region\+\_\+id\+\_\+b }\end{DoxyParamCaption}) const}
+
 
 
 Gets the chokepoints been descovered between two adjacent regions. 
@@ -89,13 +95,45 @@ Gets the chokepoints been descovered between two adjacent regions.
 \begin{DoxyReturn}{Returns}
 A vector containing all the found chokepoint between the two regions. 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classOverseer_1_1Graph_a5c40f106b55d259b1168a501f9c35ab3}\label{classOverseer_1_1Graph_a5c40f106b55d259b1168a501f9c35ab3}} 
+\index{Overseer\+::\+Graph@{Overseer\+::\+Graph}!get\+Choke\+Points@{get\+Choke\+Points}}
+\index{get\+Choke\+Points@{get\+Choke\+Points}!Overseer\+::\+Graph@{Overseer\+::\+Graph}}
+\subsubsection{\texorpdfstring{get\+Choke\+Points()}{getChokePoints()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{classOverseer_1_1ChokePoint}{Choke\+Point} $>$ Overseer\+::\+Graph\+::get\+Choke\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets all the chokepoints on the map. 
+
+\begin{DoxyReturn}{Returns}
+vector containing the chokepoints 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOverseer_1_1Graph_a3e1625adca63c0446193612b1a0e41e7}\label{classOverseer_1_1Graph_a3e1625adca63c0446193612b1a0e41e7}} 
+\index{Overseer\+::\+Graph@{Overseer\+::\+Graph}!get\+Path@{get\+Path}}
+\index{get\+Path@{get\+Path}!Overseer\+::\+Graph@{Overseer\+::\+Graph}}
+\subsubsection{\texorpdfstring{get\+Path()}{getPath()}}
+{\footnotesize\ttfamily C\+P\+Path \& Overseer\+::\+Graph\+::get\+Path (\begin{DoxyParamCaption}\item[{\hyperlink{classOverseer_1_1ChokePoint}{Choke\+Point}}]{cp\+\_\+a,  }\item[{\hyperlink{classOverseer_1_1ChokePoint}{Choke\+Point}}]{cp\+\_\+b }\end{DoxyParamCaption})}
+
+
+
+Gets a sorted list of chokepoint between chokepoint cp\+\_\+a and cp\+\_\+b. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cp\+\_\+a} & the first chokepoint. \\
+\hline
+{\em cp\+\_\+b} & the second chokepoint. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The chokepoint path between cp\+\_\+a and cp\+\_\+b. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOverseer_1_1Graph_ad515783d1196207bc2c34637f421b593}\label{classOverseer_1_1Graph_ad515783d1196207bc2c34637f421b593}} 
 \index{Overseer\+::\+Graph@{Overseer\+::\+Graph}!set\+Map@{set\+Map}}
 \index{set\+Map@{set\+Map}!Overseer\+::\+Graph@{Overseer\+::\+Graph}}
-\subsubsection[{\texorpdfstring{set\+Map(\+Map $\ast$map)}{setMap(Map *map)}}]{\setlength{\rightskip}{0pt plus 5cm}void Overseer\+::\+Graph\+::set\+Map (
-\begin{DoxyParamCaption}
-\item[{{\bf Map} $\ast$}]{map}
-\end{DoxyParamCaption}
-)}\hypertarget{classOverseer_1_1Graph_ad515783d1196207bc2c34637f421b593}{}\label{classOverseer_1_1Graph_ad515783d1196207bc2c34637f421b593}
+\subsubsection{\texorpdfstring{set\+Map()}{setMap()}}
+{\footnotesize\ttfamily void Overseer\+::\+Graph\+::set\+Map (\begin{DoxyParamCaption}\item[{\hyperlink{classOverseer_1_1Map}{Map} $\ast$}]{map }\end{DoxyParamCaption})}
+
 
 
 set the sc2 map to this class. 

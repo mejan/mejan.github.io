@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['graph',['Graph',['../classOverseer_1_1Graph.html',1,'Overseer']]],
-  ['greatertile',['GreaterTile',['../structOverseer_1_1GreaterTile.html',1,'Overseer']]],
-  ['greatertileinstance',['GreaterTileInstance',['../structOverseer_1_1GreaterTileInstance.html',1,'Overseer']]]
+  ['chokepoint',['ChokePoint',['../classOverseer_1_1ChokePoint.html',1,'Overseer']]],
+  ['comparepointpairs',['ComparePointPairs',['../structOverseer_1_1ComparePointPairs.html',1,'Overseer']]]
 ];

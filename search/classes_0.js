@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['chokepoint',['ChokePoint',['../classOverseer_1_1ChokePoint.html',1,'Overseer']]]
+  ['astar_5fnode',['astar_node',['../structastar__node.html',1,'']]],
+  ['astarnode',['AstarNode',['../structOverseer_1_1AstarNode.html',1,'Overseer']]]
 ];

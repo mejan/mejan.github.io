@@ -12,45 +12,53 @@ Class that is used as a chokepoint container with size and positioning on the ma
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classOverseer_1_1ChokePoint_a931b3cd819ec712833ae3857dcab4f7a}{Choke\+Point} (\hyperlink{classOverseer_1_1Graph}{Graph} $\ast$graph, const \hyperlink{classOverseer_1_1Region}{Region} $\ast$region1, const \hyperlink{classOverseer_1_1Region}{Region} $\ast$region2, std\+::vector$<$ Tile\+Position $>$ tile\+Positions)
+\hyperlink{classOverseer_1_1ChokePoint_a9959874fcd9bb54b08378e60ab0a1062}{Choke\+Point} (const \hyperlink{classOverseer_1_1Region}{Region} $\ast$region1, const \hyperlink{classOverseer_1_1Region}{Region} $\ast$region2, size\+\_\+t cp\+\_\+id, std\+::vector$<$ Tile\+Position $>$ tile\+Positions)
 \begin{DoxyCompactList}\small\item\em class Constructor \end{DoxyCompactList}\item 
-std\+::vector$<$ Unit\+Position $>$ \hyperlink{classOverseer_1_1ChokePoint_afe705cbfcb9948d3569f9355f3a639d9}{get\+Neutral\+Unit\+Positions} () const 
-\begin{DoxyCompactList}\small\item\em Gets the position of Neutral units (according to Blizzard\textquotesingle{}s sc2api) \end{DoxyCompactList}\item 
-std\+::pair$<$ const \hyperlink{classOverseer_1_1Region}{Region} $\ast$, const \hyperlink{classOverseer_1_1Region}{Region} $\ast$ $>$ \& \hyperlink{classOverseer_1_1ChokePoint_a8bc3320e7dd714d44808133f6b5b4e2b}{get\+Regions} ()
+std\+::pair$<$ const \hyperlink{classOverseer_1_1Region}{Region} $\ast$, const \hyperlink{classOverseer_1_1Region}{Region} $\ast$ $>$ \hyperlink{classOverseer_1_1ChokePoint_a205129078ae22b4ee04d4a0f74348acc}{get\+Regions} () const
 \begin{DoxyCompactList}\small\item\em Gets the regions where a chokepoint exists between them. \end{DoxyCompactList}\item 
-size\+\_\+t \hyperlink{classOverseer_1_1ChokePoint_a7fd40fd88577c1bbf5c462fe03485f15}{Size} () const 
+size\+\_\+t \hyperlink{classOverseer_1_1ChokePoint_a33391bda0a2a84efb0114dce77d836ff}{size} () const
 \begin{DoxyCompactList}\small\item\em Get the size of the found chokepoint. \end{DoxyCompactList}\item 
-sc2\+::\+Point2D \hyperlink{classOverseer_1_1ChokePoint_a5e6621e9c6650cf97873b6770fe7b70c}{get\+Mid\+Point} () const 
+sc2\+::\+Point2D \hyperlink{classOverseer_1_1ChokePoint_acaaffce20deb76fb67190c34dd4d6e0f}{get\+Mid\+Point} () const
 \begin{DoxyCompactList}\small\item\em Gets the mid point of the chokepoint. \end{DoxyCompactList}\item 
-std\+::vector$<$ sc2\+::\+Point2D $>$ \hyperlink{classOverseer_1_1ChokePoint_a8bc927f37b7bd865e36344857cd5ac0e}{get\+Points} ()
-\begin{DoxyCompactList}\small\item\em Gets the point position of the chokepoint. \end{DoxyCompactList}\end{DoxyCompactItemize}
+std\+::vector$<$ sc2\+::\+Point2D $>$ \hyperlink{classOverseer_1_1ChokePoint_a753c9b428f2f0b7d3d0917824b1c644c}{get\+Points} () const
+\begin{DoxyCompactList}\small\item\em Get the points within the chokepoint. \end{DoxyCompactList}\item 
+std\+::vector$<$ Tile\+Position $>$ \hyperlink{classOverseer_1_1ChokePoint_adabe2718639f0ec4230719ba44474d1e}{get\+Tile\+Positions} () const
+\begin{DoxyCompactList}\small\item\em Get the tile positions inside the choke\+Point. \end{DoxyCompactList}\item 
+Choke\+Point\+Id \hyperlink{classOverseer_1_1ChokePoint_a65fcb2c27b473c0e93f97f4e0f60cfcd}{get\+Id} () const
+\begin{DoxyCompactList}\small\item\em Get the id of the chokepoint. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classOverseer_1_1ChokePoint_ac202362d2ba190d36a7a79fa8e857091}\label{classOverseer_1_1ChokePoint_ac202362d2ba190d36a7a79fa8e857091}} 
+bool \hyperlink{classOverseer_1_1ChokePoint_ac202362d2ba190d36a7a79fa8e857091}{operator==} (const \hyperlink{classOverseer_1_1ChokePoint}{Choke\+Point} \&rhs) const
+\begin{DoxyCompactList}\small\item\em How two chokepoints will be check if equal. \end{DoxyCompactList}\item 
+bool \hyperlink{classOverseer_1_1ChokePoint_a67dde2067e19bcfed9c24b1edc0e6e2c}{adjacent} (\hyperlink{classOverseer_1_1ChokePoint}{Choke\+Point} \&cp) const
+\begin{DoxyCompactList}\small\item\em check if this chokepoint share a region with chokepoint cp. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classOverseer_1_1ChokePoint_a5b80f5db4c702537d5298e473442054d}{get\+String\+Id} () const
+\begin{DoxyCompactList}\small\item\em Gets the chokepoint id as a string. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classOverseer_1_1ChokePoint_a0092e11310e9aa5502b43723faba41b9}\label{classOverseer_1_1ChokePoint_a0092e11310e9aa5502b43723faba41b9}} 
+size\+\_\+t \hyperlink{classOverseer_1_1ChokePoint_a0092e11310e9aa5502b43723faba41b9}{get\+Choke\+Point\+Id} () const
+\begin{DoxyCompactList}\small\item\em Gets the chokepoints position between two regions (I\+N\+T\+E\+R\+N\+AL U\+SE O\+N\+LY). \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 Class that is used as a chokepoint container with size and positioning on the map. 
 
 \subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classOverseer_1_1ChokePoint_a9959874fcd9bb54b08378e60ab0a1062}\label{classOverseer_1_1ChokePoint_a9959874fcd9bb54b08378e60ab0a1062}} 
 \index{Overseer\+::\+Choke\+Point@{Overseer\+::\+Choke\+Point}!Choke\+Point@{Choke\+Point}}
 \index{Choke\+Point@{Choke\+Point}!Overseer\+::\+Choke\+Point@{Overseer\+::\+Choke\+Point}}
-\subsubsection[{\texorpdfstring{Choke\+Point(\+Graph $\ast$graph, const Region $\ast$region1, const Region $\ast$region2, std\+::vector$<$ Tile\+Position $>$ tile\+Positions)}{ChokePoint(Graph *graph, const Region *region1, const Region *region2, std::vector< TilePosition > tilePositions)}}]{\setlength{\rightskip}{0pt plus 5cm}Overseer\+::\+Choke\+Point\+::\+Choke\+Point (
-\begin{DoxyParamCaption}
-\item[{{\bf Graph} $\ast$}]{graph, }
-\item[{const {\bf Region} $\ast$}]{region1, }
-\item[{const {\bf Region} $\ast$}]{region2, }
-\item[{std\+::vector$<$ Tile\+Position $>$}]{tile\+Positions}
-\end{DoxyParamCaption}
-)}\hypertarget{classOverseer_1_1ChokePoint_a931b3cd819ec712833ae3857dcab4f7a}{}\label{classOverseer_1_1ChokePoint_a931b3cd819ec712833ae3857dcab4f7a}
+\subsubsection{\texorpdfstring{Choke\+Point()}{ChokePoint()}}
+{\footnotesize\ttfamily Overseer\+::\+Choke\+Point\+::\+Choke\+Point (\begin{DoxyParamCaption}\item[{const \hyperlink{classOverseer_1_1Region}{Region} $\ast$}]{region1,  }\item[{const \hyperlink{classOverseer_1_1Region}{Region} $\ast$}]{region2,  }\item[{size\+\_\+t}]{cp\+\_\+id,  }\item[{std\+::vector$<$ Tile\+Position $>$}]{tile\+Positions }\end{DoxyParamCaption})}
+
 
 
 class Constructor 
 
 
 \begin{DoxyParams}{Parameters}
-{\em graph} & The graphical representation of the game map. \\
-\hline
 {\em region1} & is a adjecent region to region2 \\
 \hline
 {\em region2} & is a adjecent region to region1 \\
+\hline
+{\em The} & position of the chokepoint between region1 and region2 starts at zero. \\
 \hline
 {\em tile\+Positions} & is the \char`\"{}limits\char`\"{} between region1 and region2 \\
 \hline
@@ -58,13 +66,43 @@ class Constructor
 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classOverseer_1_1ChokePoint_a67dde2067e19bcfed9c24b1edc0e6e2c}\label{classOverseer_1_1ChokePoint_a67dde2067e19bcfed9c24b1edc0e6e2c}} 
+\index{Overseer\+::\+Choke\+Point@{Overseer\+::\+Choke\+Point}!adjacent@{adjacent}}
+\index{adjacent@{adjacent}!Overseer\+::\+Choke\+Point@{Overseer\+::\+Choke\+Point}}
+\subsubsection{\texorpdfstring{adjacent()}{adjacent()}}
+{\footnotesize\ttfamily bool Overseer\+::\+Choke\+Point\+::adjacent (\begin{DoxyParamCaption}\item[{\hyperlink{classOverseer_1_1ChokePoint}{Choke\+Point} \&}]{cp }\end{DoxyParamCaption}) const}
+
+
+
+check if this chokepoint share a region with chokepoint cp. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cp} & another chokepoint \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if they share a region, otherwise false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOverseer_1_1ChokePoint_a65fcb2c27b473c0e93f97f4e0f60cfcd}\label{classOverseer_1_1ChokePoint_a65fcb2c27b473c0e93f97f4e0f60cfcd}} 
+\index{Overseer\+::\+Choke\+Point@{Overseer\+::\+Choke\+Point}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!Overseer\+::\+Choke\+Point@{Overseer\+::\+Choke\+Point}}
+\subsubsection{\texorpdfstring{get\+Id()}{getId()}}
+{\footnotesize\ttfamily Choke\+Point\+Id Overseer\+::\+Choke\+Point\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the id of the chokepoint. 
+
+\begin{DoxyReturn}{Returns}
+chokepoint id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOverseer_1_1ChokePoint_acaaffce20deb76fb67190c34dd4d6e0f}\label{classOverseer_1_1ChokePoint_acaaffce20deb76fb67190c34dd4d6e0f}} 
 \index{Overseer\+::\+Choke\+Point@{Overseer\+::\+Choke\+Point}!get\+Mid\+Point@{get\+Mid\+Point}}
 \index{get\+Mid\+Point@{get\+Mid\+Point}!Overseer\+::\+Choke\+Point@{Overseer\+::\+Choke\+Point}}
-\subsubsection[{\texorpdfstring{get\+Mid\+Point() const }{getMidPoint() const }}]{\setlength{\rightskip}{0pt plus 5cm}sc2\+::\+Point2D Overseer\+::\+Choke\+Point\+::get\+Mid\+Point (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const}\hypertarget{classOverseer_1_1ChokePoint_a5e6621e9c6650cf97873b6770fe7b70c}{}\label{classOverseer_1_1ChokePoint_a5e6621e9c6650cf97873b6770fe7b70c}
+\subsubsection{\texorpdfstring{get\+Mid\+Point()}{getMidPoint()}}
+{\footnotesize\ttfamily sc2\+::\+Point2D Overseer\+::\+Choke\+Point\+::get\+Mid\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
 
 
 Gets the mid point of the chokepoint. 
@@ -72,55 +110,64 @@ Gets the mid point of the chokepoint.
 \begin{DoxyReturn}{Returns}
 The mid point of the chokepoint 
 \end{DoxyReturn}
-\index{Overseer\+::\+Choke\+Point@{Overseer\+::\+Choke\+Point}!get\+Neutral\+Unit\+Positions@{get\+Neutral\+Unit\+Positions}}
-\index{get\+Neutral\+Unit\+Positions@{get\+Neutral\+Unit\+Positions}!Overseer\+::\+Choke\+Point@{Overseer\+::\+Choke\+Point}}
-\subsubsection[{\texorpdfstring{get\+Neutral\+Unit\+Positions() const }{getNeutralUnitPositions() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ Unit\+Position $>$ Overseer\+::\+Choke\+Point\+::get\+Neutral\+Unit\+Positions (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const}\hypertarget{classOverseer_1_1ChokePoint_afe705cbfcb9948d3569f9355f3a639d9}{}\label{classOverseer_1_1ChokePoint_afe705cbfcb9948d3569f9355f3a639d9}
-
-
-Gets the position of Neutral units (according to Blizzard\textquotesingle{}s sc2api) 
-
-\begin{DoxyReturn}{Returns}
-A vector containing the found neutralunitpositions 
-\end{DoxyReturn}
+\mbox{\Hypertarget{classOverseer_1_1ChokePoint_a753c9b428f2f0b7d3d0917824b1c644c}\label{classOverseer_1_1ChokePoint_a753c9b428f2f0b7d3d0917824b1c644c}} 
 \index{Overseer\+::\+Choke\+Point@{Overseer\+::\+Choke\+Point}!get\+Points@{get\+Points}}
 \index{get\+Points@{get\+Points}!Overseer\+::\+Choke\+Point@{Overseer\+::\+Choke\+Point}}
-\subsubsection[{\texorpdfstring{get\+Points()}{getPoints()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ sc2\+::\+Point2D $>$ Overseer\+::\+Choke\+Point\+::get\+Points (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classOverseer_1_1ChokePoint_a8bc927f37b7bd865e36344857cd5ac0e}{}\label{classOverseer_1_1ChokePoint_a8bc927f37b7bd865e36344857cd5ac0e}
+\subsubsection{\texorpdfstring{get\+Points()}{getPoints()}}
+{\footnotesize\ttfamily std\+::vector$<$ sc2\+::\+Point2D $>$ Overseer\+::\+Choke\+Point\+::get\+Points (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
-Gets the point position of the chokepoint. 
+
+Get the points within the chokepoint. 
 
 \begin{DoxyReturn}{Returns}
 vector containing chokepoint positions 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classOverseer_1_1ChokePoint_a205129078ae22b4ee04d4a0f74348acc}\label{classOverseer_1_1ChokePoint_a205129078ae22b4ee04d4a0f74348acc}} 
 \index{Overseer\+::\+Choke\+Point@{Overseer\+::\+Choke\+Point}!get\+Regions@{get\+Regions}}
 \index{get\+Regions@{get\+Regions}!Overseer\+::\+Choke\+Point@{Overseer\+::\+Choke\+Point}}
-\subsubsection[{\texorpdfstring{get\+Regions()}{getRegions()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::pair$<$ const {\bf Region} $\ast$, const {\bf Region} $\ast$ $>$ \& Overseer\+::\+Choke\+Point\+::get\+Regions (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{classOverseer_1_1ChokePoint_a8bc3320e7dd714d44808133f6b5b4e2b}{}\label{classOverseer_1_1ChokePoint_a8bc3320e7dd714d44808133f6b5b4e2b}
+\subsubsection{\texorpdfstring{get\+Regions()}{getRegions()}}
+{\footnotesize\ttfamily std\+::pair$<$ const \hyperlink{classOverseer_1_1Region}{Region} $\ast$, const \hyperlink{classOverseer_1_1Region}{Region} $\ast$ $>$ Overseer\+::\+Choke\+Point\+::get\+Regions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
 
 
 Gets the regions where a chokepoint exists between them. 
 
 \begin{DoxyReturn}{Returns}
-pair containing adjecent regions with chokepoint between them 
+pair containing adjecent region pointers with chokepoint between them 
 \end{DoxyReturn}
-\index{Overseer\+::\+Choke\+Point@{Overseer\+::\+Choke\+Point}!Size@{Size}}
-\index{Size@{Size}!Overseer\+::\+Choke\+Point@{Overseer\+::\+Choke\+Point}}
-\subsubsection[{\texorpdfstring{Size() const }{Size() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Overseer\+::\+Choke\+Point\+::\+Size (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const}\hypertarget{classOverseer_1_1ChokePoint_a7fd40fd88577c1bbf5c462fe03485f15}{}\label{classOverseer_1_1ChokePoint_a7fd40fd88577c1bbf5c462fe03485f15}
+\mbox{\Hypertarget{classOverseer_1_1ChokePoint_a5b80f5db4c702537d5298e473442054d}\label{classOverseer_1_1ChokePoint_a5b80f5db4c702537d5298e473442054d}} 
+\index{Overseer\+::\+Choke\+Point@{Overseer\+::\+Choke\+Point}!get\+String\+Id@{get\+String\+Id}}
+\index{get\+String\+Id@{get\+String\+Id}!Overseer\+::\+Choke\+Point@{Overseer\+::\+Choke\+Point}}
+\subsubsection{\texorpdfstring{get\+String\+Id()}{getStringId()}}
+{\footnotesize\ttfamily std\+::string Overseer\+::\+Choke\+Point\+::get\+String\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the chokepoint id as a string. 
+
+\begin{DoxyReturn}{Returns}
+string version of chokepoint id. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOverseer_1_1ChokePoint_adabe2718639f0ec4230719ba44474d1e}\label{classOverseer_1_1ChokePoint_adabe2718639f0ec4230719ba44474d1e}} 
+\index{Overseer\+::\+Choke\+Point@{Overseer\+::\+Choke\+Point}!get\+Tile\+Positions@{get\+Tile\+Positions}}
+\index{get\+Tile\+Positions@{get\+Tile\+Positions}!Overseer\+::\+Choke\+Point@{Overseer\+::\+Choke\+Point}}
+\subsubsection{\texorpdfstring{get\+Tile\+Positions()}{getTilePositions()}}
+{\footnotesize\ttfamily std\+::vector$<$Tile\+Position$>$ Overseer\+::\+Choke\+Point\+::get\+Tile\+Positions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the tile positions inside the choke\+Point. 
+
+\begin{DoxyReturn}{Returns}
+vector containing tile positions. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOverseer_1_1ChokePoint_a33391bda0a2a84efb0114dce77d836ff}\label{classOverseer_1_1ChokePoint_a33391bda0a2a84efb0114dce77d836ff}} 
+\index{Overseer\+::\+Choke\+Point@{Overseer\+::\+Choke\+Point}!size@{size}}
+\index{size@{size}!Overseer\+::\+Choke\+Point@{Overseer\+::\+Choke\+Point}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily size\+\_\+t Overseer\+::\+Choke\+Point\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
 
 
 Get the size of the found chokepoint. 

@@ -3,5 +3,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="Overseer::ChokePoint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOverseer_1_1ChokePoint.html",tooltip="Class that is used as a chokepoint container with size and positioning on the map. "];
+  Node0 [label="astar_node",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structastar__node.html",tooltip="Container for an chokepoint id and its fscore for A*. "];
 }

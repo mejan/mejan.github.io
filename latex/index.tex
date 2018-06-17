@@ -4,7 +4,7 @@ Library for analyzing Starcraft 2 maps by region decomposition. Based on the \hr
 
 \subsection*{Getting started}
 
-Demo for Commandcenter https\+://github.com/pimmen89/\+Overseer/blob/master/demo/commandcenter.\+md \char`\"{}is found here.\char`\"{} Which is a very short demo just to get started.
+Demo for Commandcenter https\+://gitlab.com/\+Over\+Starcraft/\+Overseer/blob/master/demo/commandcenter.\+md \char`\"{}is found here.\char`\"{} Which is a very short demo just to get started.
 
 Include the file {\ttfamily \hyperlink{MapImpl_8h_source}{Map\+Impl.\+h}} into your project to get started.
 
@@ -14,16 +14,16 @@ You need to pass a pointer to your Agent to the map to have it fully configured.
 
 
 \begin{DoxyCode}
-1 \{c++\}
-2 \{
-3     Overseer::MapImpl map;
-4 
-5     map.setBot(&bot); //Pass a pointer to your sc2::Agent
-6     map.Initialize(); //Intialize the map
-7 
-8     std::cout << "Number of tiles on map: " << map.size() << std::endl;
-9     std::cout << "Number of regions: " << map.getRegions().size() << std::endl;
-10 \}
+\{c++\}
+\{
+    Overseer::MapImpl map;
+
+    map.setBot(&bot); //Pass a pointer to your sc2::Agent
+    map.Initialize(); //Intialize the map
+
+    std::cout << "Number of tiles on map: " << map.size() << std::endl;
+    std::cout << "Number of regions: " << map.getRegions().size() << std::endl;
+\}
 \end{DoxyCode}
 
 
@@ -31,8 +31,8 @@ Example output\+:
 
 
 \begin{DoxyCode}
-1 Number of tiles on map: 26752
-2 Number of regions: 18
+Number of tiles on map: 26752
+Number of regions: 18
 \end{DoxyCode}
 
 
@@ -48,7 +48,7 @@ The documentation is for local use only and can be \href{https://mejan.github.io
 
 \subsection*{License}
 
-The license for this software (Overseer) can be found https\+://github.com/pimmen89/\+Overseer/blob/master/\+L\+I\+C\+E\+N\+S\+E.\+md \char`\"{}here.\char`\"{}
+The license for this software (Overseer) can be found https\+://gitlab.com/\+Over\+Starcraft/\+Overseer/blob/master/\+L\+I\+C\+E\+N\+S\+E.\+md \char`\"{}here.\char`\"{}
 
 \subsubsection*{Third party software license}
 
